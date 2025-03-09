@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const About = () => {
     return (
-        <section className="w-full bg-black text-white py-16">
+        <section className="w-full bg-black h-full text-white py-16">
             <div className="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-20 w-full max-w-[90%] mx-auto">
                 {/* Rasm qismi */}
                 <motion.div
