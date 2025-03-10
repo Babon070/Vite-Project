@@ -1,16 +1,15 @@
 import { motion } from "framer-motion";
 import { Typewriter } from "react-simple-typewriter";
-import { Button } from "@/components/ui/button";
-import { useNavigate } from "react-router-dom";
 import About from "./About";
 import Projects from "@/components/Projects";
+import Slider from "../components/Slider";
 
 export default function Home() {
-    const navigate = useNavigate();
 
     return (
         <div className="bg-black min-h-screen p-6 md:p-10">
             <About />
+            <Slider />
             <div className="flex flex-col items-center text-white text-center space-y-6">
                 <motion.h1
                     initial={{ opacity: 0, y: -50 }}
@@ -55,6 +54,9 @@ export default function Home() {
                 </motion.div>
             </div>
             <Projects />
+
+            <Slider />
+
         </div>
     );
 }

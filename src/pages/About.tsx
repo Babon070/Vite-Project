@@ -4,8 +4,8 @@ import { FaGithub, FaTelegram, FaGlobe } from "react-icons/fa";
 
 const About = () => {
     return (
-        <section className="w-full bg-black text-white py-10 flex items-center justify-center">
-            <div className="flex flex-col py-6 md:flex-row items-center justify-center gap-8 md:gap-16 w-full max-w-5xl mx-auto">
+        <section className="w-full text-white py-10 flex items-center flex-col">
+            <div className="flex bg-black flex-col py-6 md:flex-row justify-center gap-8 md:gap-16 w-full max-w-5xl mx-auto">
                 {/* Rasm qismi */}
                 <motion.div
                     initial={{ opacity: 0, x: -100 }}
@@ -38,7 +38,7 @@ const About = () => {
 
                         <div className="flex gap-3">
                             <a
-                                href="https://github.com/yourgithub"
+                                href="https://github.com/Babon070"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="p-3 bg-gray-800 hover:bg-gray-700 rounded-full transition"
@@ -46,7 +46,7 @@ const About = () => {
                                 <FaGithub className="text-xl sm:text-2xl" />
                             </a>
                             <a
-                                href="https://t.me/yourtelegram"
+                                href="https://t.me/Frontend_dev070"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="p-3 bg-gray-800 hover:bg-gray-700 rounded-full transition"
@@ -54,7 +54,7 @@ const About = () => {
                                 <FaTelegram className="text-xl sm:text-2xl" />
                             </a>
                             <a
-                                href="https://yourwebsite.netlify.app"
+                                href="https://babon-dev.netlify.app/"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="p-3 bg-gray-800 hover:bg-gray-700 rounded-full transition"
@@ -65,6 +65,7 @@ const About = () => {
                     </div>
                 </motion.div>
             </div>
+           
         </section>
     );
 }

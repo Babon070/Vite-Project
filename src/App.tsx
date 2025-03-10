@@ -6,6 +6,7 @@ import Projects from "./components/Projects";
 
 function App() {
   return (
+    <div className="bg-black">
     <Router>
       <Navbar />
       <Routes>
@@ -14,6 +15,7 @@ function App() {
         <Route path="/projects" element={<Projects />} />
       </Routes>
     </Router>
+    </div>
   );
 }
 
