@@ -2,9 +2,9 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
     return (
-        <nav className="bg-black p-4 shadow-lg border-b">
+        <nav className="bg-black p-4 shadow-lg border-b sticky top-0">
             <div className="container mx-auto flex justify-between items-center">
-                <Link to='/' className="text-white text-2xl font-bold">My Portfolio</Link>
+                <Link to='/' className="text-white text-2xl font-bold">Babon Dev</Link>
                 <ul className="flex space-x-4">
                     <Link to='/' className="text-white hover:text-gray-400 transition duration-300">
                         Home

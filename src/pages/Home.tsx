@@ -10,6 +10,7 @@ export default function Home() {
 
     return (
         <div className="bg-black min-h-screen p-6 md:p-10">
+            <About />
             <div className="flex flex-col items-center text-white text-center space-y-6">
                 <motion.h1
                     initial={{ opacity: 0, y: -50 }}
@@ -42,7 +43,7 @@ export default function Home() {
                     transition={{ delay: 1, duration: 0.5 }}
                     className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 w-full md:w-auto"
                 >
-                    <Button className="bg-white text-black px-6 py-3 rounded-lg shadow-lg hover:bg-gray-200 transition duration-300 w-full md:w-auto">
+                    {/* <Button className="bg-white text-black px-6 py-3 rounded-lg shadow-lg hover:bg-gray-200 transition duration-300 w-full md:w-auto">
                         Hire Me
                     </Button>
                     <Button
@@ -50,10 +51,9 @@ export default function Home() {
                         className="bg-gray-800 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-gray-700 transition duration-300 w-full md:w-auto"
                     >
                         View Projects
-                    </Button>
+                    </Button> */}
                 </motion.div>
             </div>
-            <About />
             <Projects />
         </div>
     );

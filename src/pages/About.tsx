@@ -1,16 +1,17 @@
 import ProfilePhoto from '../assets/image.jpg'
 import { motion } from "framer-motion";
+import { FaGithub, FaTelegram, FaGlobe } from "react-icons/fa";
 
 const About = () => {
     return (
-        <section className="w-full bg-black h-full text-white py-16">
-            <div className="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-20 w-full max-w-[90%] mx-auto">
+        <section className="w-full bg-black text-white py-10 flex items-center justify-center">
+            <div className="flex flex-col py-6 md:flex-row items-center justify-center gap-8 md:gap-16 w-full max-w-5xl mx-auto">
                 {/* Rasm qismi */}
                 <motion.div
                     initial={{ opacity: 0, x: -100 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 1 }}
-                    className="w-48 h-48 md:w-72 md:h-72 rounded-full overflow-hidden shadow-lg"
+                    className="w-40 h-40 md:w-60 md:h-60 lg:w-72 lg:h-72 rounded-full overflow-hidden shadow-lg"
                 >
                     <img src={ProfilePhoto} alt="My Photo" className="w-full h-full object-cover" />
                 </motion.div>
@@ -20,20 +21,47 @@ const About = () => {
                     initial={{ opacity: 0, x: 100 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 1, delay: 0.3 }}
-                    className="text-center md:text-left max-w-sm md:max-w-md"
+                    className="text-center md:text-left max-w-xs sm:max-w-sm md:max-w-md"
                 >
-                    <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                        About Me
+                    <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">
+                        My name is <strong>Bobomurod</strong>
                     </h2>
-                    <p className="text-base md:text-lg text-gray-400 leading-relaxed">
+                    <p className="text-sm sm:text-base md:text-lg text-gray-400 leading-relaxed">
                         I'm a passionate <strong>Frontend Developer</strong> with experience in React, TypeScript, and UI libraries like ShadCN and Tailwind CSS.
                         Additionally, I have backend experience with <strong>PHP Symfony</strong>, building robust and scalable applications.
                     </p>
 
-                    <div className="mt-6">
-                        <button className="px-5 py-2 md:px-6 md:py-3 bg-blue-500 rounded-lg hover:bg-blue-700 transition">
+                    <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4 mt-6">
+                        <button className="px-4 py-2 sm:px-6 sm:py-3 bg-blue-500 rounded-lg hover:bg-blue-700 transition w-full sm:w-auto">
                             Contact Me
                         </button>
+
+                        <div className="flex gap-3">
+                            <a
+                                href="https://github.com/yourgithub"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="p-3 bg-gray-800 hover:bg-gray-700 rounded-full transition"
+                            >
+                                <FaGithub className="text-xl sm:text-2xl" />
+                            </a>
+                            <a
+                                href="https://t.me/yourtelegram"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="p-3 bg-gray-800 hover:bg-gray-700 rounded-full transition"
+                            >
+                                <FaTelegram className="text-xl sm:text-2xl" />
+                            </a>
+                            <a
+                                href="https://yourwebsite.netlify.app"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="p-3 bg-gray-800 hover:bg-gray-700 rounded-full transition"
+                            >
+                                <FaGlobe className="text-xl sm:text-2xl" />
+                            </a>
+                        </div>
                     </div>
                 </motion.div>
             </div>
